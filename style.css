@@ -1,0 +1,97 @@
+ img{
+    height: 100px;
+    width: 100px;
+    border-radius : 50%;
+}
+#toggleing{
+    display: none;
+}
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f6f4fc; /* White background */
+    color: #615f5f; /* Cool Gray text */
+    margin: 0;
+    padding: 0;
+  }
+  
+  .resume-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(71, 41, 41, 0.1);
+  }
+  
+  header {
+    background-color: #083667; /* Slate Gray */
+    color: #FFFFFF; /* White text */
+    padding: 10px;
+    text-align: center;
+  }
+  .anker{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+  }
+  header h1 {
+    margin: 0;
+    font-size: 2em;
+  }
+  
+  header p {
+    margin: 5px 0;
+  }
+  
+  .card {
+    background-color: #f0eaea; /* White background */
+    border: 1px solid #574d4d; /* Light Gray border */
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    border-bottom: 2px solid #083667
+    ; /* Electric Blue */
+    padding-bottom: 5px;
+    color: #3c3d3e; /* Slate Gray */
+  }
+  
+  button {
+    background-color: #143b66; /* Electric Blue */
+    color: #f9f5f5; /* White text */
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    font-size: 1em;
+  }
+  
+  button:hover {
+    background-color: #1e2f40; /* Darker Electric Blue */
+  }
+  
+  .skills-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .skills-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .progress-bar {
+    flex-grow: 1;
+    background-color: #3c3c3d; /* Light Gray */
+    border-radius: 4px;
+  }
+  
+  .progress {
+    height: 100%;
+    background-color: #007BFF;
+    width: 0;
+    transition: width 1s ease;
+    border-bottom: #08284a;
+  }
