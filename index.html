@@ -3,132 +3,131 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Your Name - Professional Resume" />
-    <title>Resume - Your Name</title>
+    <title>Professional Resume</title>
     <link rel="stylesheet" href="style.css" />
     <script
       src="https://kit.fontawesome.com/0821b4c791.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Itim&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div class="resume-container">
-      <header>
-        <div class="header-content">
-          <img src="aesthetic.jpg" />
-          <h1>Rimsha Sheikh</h1>
-          <p>Frontend Developer</p>
-          <p><i class="fa-solid fa-envelope"></i> adnanhuzaifa95@gmail.com</p>
-        </div>
-      </header>
+    <div id="resume">
+      <aside class="sidebar">
+        <img src="aesthetic.jpg" alt="Profile Picture" class="profile-image" />
+        <h2>Rimsha Sheikh</h2>
+        <p>Frontend Developer</p>
+        <!-- Hide/Show Skills Button -->
+        <button id="toggle-skills-button">Show Skills</button>
 
-      <!-- Personal Info Section -->
-      <section id="personal-info" class="card">
-        <h2>Personal Info</h2>
-        <p>Full Name: Rimsha Sheikh</p>
-        <p><i class="fa-solid fa-envelope"></i> adnanhuzaifa95@gmail.com</p>
-        <p><i class="fa-solid fa-phone"></i>+352-678493</p>
-      </section>
+        <!-- Skills Section -->
 
-      <!-- Education Section -->
-      <section id="education" class="card">
-        <h2>Education</h2>
-        <div class="education-item">
-          <h3>Associate Degree In Arts</h3>
-          <p>University of Karachi: 2024</p>
+        <div id="toggleing">
+          <section id="skills" class="card hidden">
+            <ul>
+              <li>
+                <span>HTML</span>
+                <div class="progress-bar">
+                  <div class="progress" data-skill-level="90"></div>
+                </div>
+              </li>
+              <li>
+                <span>CSS</span>
+                <div class="progress-bar">
+                  <div class="progress" data-skill-level="85"></div>
+                </div>
+              </li>
+              <li>
+                <span>Javascript</span>
+                <div class="progress-bar">
+                  <div class="progress" data-skill-level="85"></div>
+                </div>
+              </li>
+              <li>
+                <span>TypeScript</span>
+                <div class="progress-bar">
+                  <div class="progress" data-skill-level="80"></div>
+                </div>
+              </li>
+              <li>
+                <span>React</span>
+                <div class="progress-bar">
+                  <div class="progress" data-skill-level="80"></div>
+                </div>
+              </li>
+              <li>
+                <span>Tailwind</span>
+                <div class="progress-bar">
+                  <div class="progress" data-skill-level="80"></div>
+                </div>
+              </li>
+              <li>
+                <span>Next.js</span>
+                <div class="progress-bar">
+                  <div class="progress" data-skill-level="80"></div>
+                </div>
+              </li>
+            </ul>
+          </section>
         </div>
-        <div class="education-item">
-          <h3>Intermediate In Arts</h3>
-          <p>Enter Board: 2021</p>
-        </div>
-        <div class="education-item">
-          <h3>Matriculation In Science</h3>
-          <p>Sindh Board: 2019</p>
-        </div>
-      </section>
-
-      <!-- Experience Section -->
-      <section id="experience" class="card">
-        <h2>Experience</h2>
-        <div class="job">
-          <h3>Frontend Developer</h3>
+        <footer>
+          <h3>Connect me</h3>
           <p>
-            As a Frontend Developer with hands-on experience in TypeScript,
-            JavaScript, HTML, CSS, React, and Tailwind CSS, I've created and
-            maintained responsive web applications that improve user engagement.
-            I've used Node.js to effectively complete a variety of projects,
-            including interactive calculators, ATM simulations, and extensive
-            financial systems. My responsibilities included working with design
-            teams, optimizing application performance, and integrating APIs to
-            ensure smooth functionality and a high-quality user interface.
+            <i class="fa-brands fa-github"></i>
+            <a href="https://github.com/Rimsha-Adnan" target="_blank"
+              >github.com/Rimsha-Adnan</a
+            >
           </p>
-        </div>
-      </section>
+          <p>
+            <i class="fa-brands fa-linkedin"></i>
+            <a href="https://linkedin.com/in/rimsha-sheikh" target="_blank"
+              >linkedin.com/in/rimsha-sheikh</a
+            >
+          </p>
+        </footer>
+      </aside>
 
-      <!-- Hide/Show Skills Button -->
-      <button id="toggle-skills-button">Show Skills</button>
-
-      <!-- Skills Section -->
-
-      <div id="toggleing">
-        <section id="skills" class="card hidden">
-          <h2>Skills</h2>
-          <ul>
-            <li>
-              <span>HTML</span>
-              <div class="progress-bar">
-                <div class="progress" data-skill-level="90"></div>
-              </div>
-            </li>
-            <li>
-              <span>CSS</span>
-              <div class="progress-bar">
-                <div class="progress" data-skill-level="85"></div>
-              </div>
-            </li>
-            <li>
-              <span>Javascript</span>
-              <div class="progress-bar">
-                <div class="progress" data-skill-level="85"></div>
-              </div>
-            </li>
-            <li>
-              <span>TypeScript</span>
-              <div class="progress-bar">
-                <div class="progress" data-skill-level="80"></div>
-              </div>
-            </li>
-            <li>
-              <span>React</span>
-              <div class="progress-bar">
-                <div class="progress" data-skill-level="80"></div>
-              </div>
-            </li>
-            <li>
-              <span>Tailwind</span>
-              <div class="progress-bar">
-                <div class="progress" data-skill-level="80"></div>
-              </div>
-            </li>
-          </ul>
+      <main class="content">
+        <section class="section" id="personal-info">
+          <h2>Personal Information</h2>
+          <p>Email: <span id="email">adnanhuzaifa95@gmail.com</span></p>
+          <p>Phone: <span id="phone">+352-678493</span></p>
         </section>
-      </div>
+        <section class="section" id="about-me">
+          <h2>About Me</h2>
+          <p>
+            I am a dedicated Frontend Developer skilled in TypeScript,
+            JavaScript, HTML, CSS, and React. I focus on building responsive and
+            user-friendly applications with attention to detail. I am passionate
+            about learning new technologies and contributing to innovative
+            projects.
+          </p>
+        </section>
 
-      <!-- Footer Section -->
-      <footer class="card">
-        <p>
-          Connect with me:
-          <a class="anker"
-            href="https://www.linkedin.com/in/rimsha-sheikh-hardwork-developer/"
-            ><i class="fa-brands fa-linkedin"></i>Linkdin</a
-          >
-          |
-          <a class="anker" href="https://github.com/Rimsha-Adnan"
-            ><i class="fa-brands fa-github"></i>GitHub</a
-          >
-        </p>
-      </footer>
-      <script src="script.js"></script>
+        <section class="section" id="education">
+          <h2>Education</h2>
+          <p>Associate Degree in Arts - University of Karachi</p>
+          <p>Intermediate in Arts - Local Institution</p>
+          <p>Matriculation in Science - Local Institution</p>
+        </section>
+
+        <section class="section" id="experience">
+          <h2>Experience</h2>
+          <p>Currently working on freelance projects and personal websites.</p>
+        </section>
+
+        <section class="section" id="projects">
+          <h2>Projects</h2>
+          <ul id="project-list"></ul>
+        </section>
+      </main>
     </div>
+
+    <script src="script.js"></script>
   </body>
 </html>

@@ -1,5 +1,5 @@
 
-// Function to toggle the skills section visibility
+// // Function to toggle the skills section visibility
 const toggleSkillsVisibility = () => {
     const skillsSection = document.getElementById('toggleing');
     const toggleButton = document.getElementById('toggle-skills-button');
@@ -24,3 +24,19 @@ const toggleSkillsVisibility = () => {
   }
   
   
+// Populate projects dynamically
+const projects = [
+  { title: 'Amazon Clone', description: 'An Amazon website clone with HTML, CSS' },
+  { title: 'Resume Builder', description: 'A dynamic resume builder using TypeScript and HTML' },
+  {title: 'Portfolio Website', description: 'A portfolio website by using Next.js'},
+  {title: 'Word Counter', description: 'A word counter web application by using React'},
+  {title: 'Course Website', description: 'A course web application using also Next.js'}
+];
+
+const projectList = document.getElementById('project-list') as HTMLUListElement;
+projects.forEach((project) => {
+  const listItem = document.createElement('li');
+  listItem.innerHTML = `<strong>${project.title}:</strong> ${project.description}`;
+  projectList.appendChild(listItem);
+  console.log(projectList);
+});
